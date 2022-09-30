@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@mixin xsNavbar{
+    @apply
+    xs:h-16
+    xs:flex
+    xs:content-center
+    xs:items-center
+    xs:bg-slate-900
+    xs:flex justify-between
+    /* -------[ sm/640px ]------- */
+    sm:h-16
+    sm:flex
+    sm:content-center
+    sm:items-center
+    sm:bg-slate-900
+    sm:flex justify-between
+    /* -------[ lg/1024px ]------- */
+    lg:h-20
+    lg:flex
+    lg:content-center
+    lg:items-center
+    lg:bg-slate-900
+    lg:flex justify-between
+    /* -------[ xl/1280px ]------- */
+    xl:h-20
+    xl:flex
+    xl:content-center
+    xl:items-center
+    xl:bg-slate-900
+    xl:flex justify-between
+    /* -------[ 2xl/1536px ]------- */
+    2xl:h-20
+    2xl:flex
+    2xl:content-center
+    2xl:items-center
+    2xl:bg-slate-900
+    2xl:flex justify-between
+    
+}
+
+@mixin xslogo {
+    @apply
+    xs:ml-1
+    xs:flex
+    xs:items-center
+    animate-pulse
+    xs:text-emerald-500
+    xs:text-base
+    /* -------[ sm/640px ]------- */
+    sm:ml-3
+    sm:flex
+    sm:items-center
+    animate-pulse
+    sm:text-emerald-500
+    sm:text-sm
+    /* -------[ lg/1024px ]------- */
+    lg:ml-6
+    lg:flex
+    lg:items-center
+    animate-pulse
+    lg:text-emerald-500
+    lg:text-lg
+    /* -------[ xl/1280px ]------- */
+    xl:ml-8
+    xl:flex
+    xl:items-center
+    animate-pulse
+    xl:text-emerald-500
+    xl:text-xl
+    /* -------[ 2xl/1536px ]------- */
+    2xl:ml-9
+    2xl:flex
+    2xl:items-center
+    animate-pulse
+    2xl:text-emerald-500
+    2xl:text-2xl
+}
+
+@mixin xsP{
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:duration-500
+    xs:p-2
+    xs:flex
+    xs:justify-between
+    xs:items-center
+    xs:text-xs
+    xs:text-zinc-300
+    xs:hover:text-zinc-600
+    xs:gap-0.5
+    /* -------[ sm/640px ]------- */
+    sm:duration-500
+    sm:p-4
+    sm:flex
+    sm:justify-between
+    sm:items-center
+    sm:text-sm
+    sm:text-zinc-300
+    sm:hover:text-zinc-600
+    xs:gap-1
+    /* -------[ lg/1024px ]------- */
+    lg:duration-500
+    lg:p-4
+    lg:flex
+    lg:justify-between
+    lg:items-center
+    lg:text-lg
+    lg:text-zinc-300
+    lg:hover:text-zinc-600
+    lg:gap-x-1
+    /* -------[ xl/1280px ]------- */
+    xl:duration-500
+    xl:p-4
+    xl:flex
+    xl:justify-between
+    xl:items-center
+    xl:text-xl
+    xl:text-zinc-300
+    xl:hover:text-zinc-600
+    xl:gap-x-1
+    /* -------[ 2xl/1536px ]------- */
+    2xl:duration-500
+    2xl:p-4
+    2xl:flex
+    2xl:justify-between
+    2xl:items-center
+    2xl:text-2xl
+    2xl:text-zinc-300
+    2xl:hover:text-zinc-600
+    2xl:gap-x-1
+}
+
+@mixin xsMenu{
+    @apply
+    lg:mr-2
+    xs:flex
+    xs:justify-between
+    /* -------[ sm/640px ]------- */
+    lg:mr-3
+    sm:flex
+    sm:justify-between
+    /* -------[ lg/1024px ]------- */
+    lg:mr-6
+    lg:flex
+    lg:justify-between
+    /* -------[ xl/1280px ]------- */
+    xl:mr-8
+    xl:flex
+    xl:justify-between
+    /* -------[ 2xl/1536px ]------- */
+    2xl:mr-9
+    2xl:flex
+    2xl:justify-between
+
+}
+
+#navbar{
+    #logo{
+        @include xslogo
+    
+    }
+    #menu{
+        a{
+            @include xsP
+        }
+        @include xsMenu
+    }
+    @include xsNavbar
+}
