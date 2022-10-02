@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin Profile {
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:flex
+    xs:items-start
+    xs:justify-start
+    gap-4
+    xs:h-48
+    xs:w-72
+    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    xs:rounded-3xl
+    /* -------[ sm/640px ]------- */
+    sm:flex
+    sm:items-start
+    sm:justify-start
+    sm:gap-16
+    sm:h-48
+    sm:w-96
+    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    sm:rounded-3xl
+    /* -------[ md/768px ]------- */
+    md:flex
+    md:items-start
+    md:justify-start
+    md:gap-16
+    md:h-48
+    md:w-96
+    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    md:rounded-3xl
+    /* -------[ lg/1024px ]------- */
+    lg:flex
+    lg:items-start
+    lg:justify-start
+    lg:gap-16
+    lg:h-48
+    lg:w-96
+    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    lg:rounded-3xl
+    /* -------[ xl/1280px ]------- */
+    xl:flex
+    xl:justify-between
+    xl:items-start
+    xl:gap-16
+    xl:h-56
+    xl:w-4/12
+    bg-gradient-to-br from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    xl:rounded-3xl
+    /* -------[ 2xl/1536px ]------- */
+    2xl:flex
+    2xl:justify-between
+    2xl:items-start
+    2xl:gap-12
+    2xl:h-56
+    2xl:w-4/12
+    bg-gradient-to-br from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    2xl:rounded-3xl
+}
+@mixin Card{
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:w-24
+    xs:items-center
+    xs:text-center
+    xs:flex
+    xs:flex-col
+    xs:my-2
+    xs:ml-2
+    xs:gap-5
+    /* -------[ sm/640px ]------- */
+    sm:w-32
+    sm:items-center
+    sm:text-center
+    sm:flex
+    sm:flex-col
+    sm:my-4
+    sm:ml-2
+    sm:gap-6
+    /* -------[ md/768px ]------- */
+    md:w-32
+    md:items-center
+    md:text-center
+    md:flex
+    md:flex-col
+    md:my-4
+    md:ml-2
+    md:gap-6
+    /* -------[ lg/1024px ]------- */
+    lg:w-32
+    lg:items-center
+    lg:text-center
+    lg:flex
+    lg:flex-col
+    lg:my-4
+    lg:ml-2
+    lg:gap-6
+    /* -------[ xl/1280px ]------- */
+    xl:w-44
+    xl:items-center
+    xl:text-center
+    xl:flex
+    xl:flex-col
+    xl:my-4
+    xl:ml-2
+    xl:gap-6
+    /* -------[ 2xl/1536px ]------- */
+    2xl:w-48
+    2xl:items-center
+    2xl:text-center
+    2xl:flex
+    2xl:flex-col
+    2xl:my-5
+    2xl:ml-2
+    2xl:gap-6
+}
+
+@mixin pCard{
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:text-gray-200
+    xs:text-xs
+    font-serif
+    /* -------[ sm/640px ]------- */
+  sm:text-gray-200
+    sm:text-sm
+    font-serif
+    /* -------[ md/768px ]------- */
+  md:text-gray-200
+    md:text-sm
+    font-serif
+    /* -------[ lg/1024px ]------- */
+    lg:text-gray-200
+    lg:text-sm
+    font-serif
+    /* -------[ xl/1280px ]------- */
+    xl:text-gray-200
+    xl:text-lg
+    xl:font-serif
+    /* -------[ 2xl/1536px ]------- */
+    2xl:text-gray-200
+    2xl:text-xl
+    2xl:font-serif
+}
+@mixin imgCard {
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:w-10
+    xs:h-10
+    xs:rounded-full
+    xs:ring-offset-transparent
+    xs:ring-offset-4
+  xs:ring-offset-neutral-900
+    xs:ring-1 ring-purple-800
+    /* -------[ sm/640px ]------- */
+    sm:w-14
+    sm:h-14
+    sm:rounded-full
+    sm:ring-offset-transparent
+    sm:ring-offset-4
+  sm:ring-offset-neutral-900
+    sm:ring-1 ring-purple-800
+    /* -------[ md/768px ]------- */
+    md:w-14
+    md:h-14
+    md:rounded-full
+    md:ring-offset-transparent
+    md:ring-offset-4
+  md:ring-offset-neutral-900
+    md:ring-1 ring-purple-800
+     /* -------[ xl/1280px ]------- */
+     xl:w-16
+     xl:h-16
+     xl:rounded-full
+     xl:ring-offset-transparent
+     xl:ring-offset-4
+   xl:ring-offset-neutral-900
+     xl:ring-1 ring-purple-800
+     /* -------[ 2xl/1536px ]------- */
+     2xl:w-16
+     2xl:h-16
+     2xl:rounded-full
+     2xl:ring-offset-transparent
+     2xl:ring-offset-4
+   2xl:ring-offset-neutral-900
+     2xl:ring-1 ring-purple-800
+}
+
+@mixin Skills{
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:items-center
+    sm:flex-col
+    xs:w-40
+    xs:my-2
+    xs:mr-2
+    /* -------[ sm/640px ]------- */
+    sm:items-center
+    sm:flex-col
+    sm:w-44
+    sm:my-4
+    sm:mr-2
+    /* -------[ md/768px ]------- */
+    md:items-center
+    md:flex-col
+    md:w-44
+    md:my-4
+    md:mr-2
+    /* -------[ xl/1280px ]------- */
+    xl:items-center
+    xl:flex-col
+    xl:w-44
+    xl:my-4
+    xl:mr-2
+    /* -------[ 2xl/1536px ]------- */
+    2xl:flex
+    2xl:items-center
+    2xl:flex-col
+    2xl:w-64
+    2xl:my-4
+    2xl:mr-2
+}
+@mixin h3Skills{
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:flex
+    xs:justify-center
+    xs:font-mono
+    xs:text-xs
+  xs:text-gray-200
+    xs:items-center
+    xs:gap-0.5
+    /* -------[ sm/640px ]------- */
+    sm:flex
+    sm:justify-center
+    sm:font-mono
+    sm:text-sm
+  sm:text-gray-200
+    sm:items-center
+    sm:gap-0.5
+    /* -------[ md/768px ]------- */
+    md:flex
+    md:justify-center
+    md:font-mono
+    md:text-sm
+  md:text-gray-200
+    md:items-center
+    md:gap-0.5
+    /* -------[ xl/1280px ]------- */
+    xl:flex
+    xl:justify-center
+    xl:font-mono
+    xl:text-xl
+  xl:text-gray-200
+    xl:items-center
+    xl:gap-0.5
+    /* -------[ 2xl/1536px ]------- */
+    2xl:flex
+    2xl:justify-center
+    2xl:font-mono
+    2xl:text-xl
+  2xl:text-gray-200
+    2xl:items-center
+    2xl:gap-0.5
+    
+}
+@mixin pSkills{
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:text-xs
+    xs:gap-1
+    xs:flex
+    xs:items-center
+  xs:text-gray-200
+    xs:font-normal
+    /* -------[ sm/640px ]------- */
+    sm:text-xs
+    sm:gap-1
+    sm:flex
+    sm:items-center
+  sm:text-gray-200
+    sm:font-normal
+    /* -------[ md/768px ]------- */
+    md:text-xs
+    md:gap-1
+    md:flex
+    md:items-center
+  md:text-gray-200
+    md:font-normal
+    /* -------[ xl/1280px ]------- */
+    xl:text-sm
+    xl:gap-1
+    xl:flex
+    xl:items-center
+  xl:text-gray-200
+    xl:font-normal
+    /* -------[ 2xl/1536px ]------- */
+    2xl:text-sm
+    2xl:gap-1
+    2xl:flex
+    2xl:items-center
+  2xl:text-gray-200
+    2xl:font-normal
+}
+@mixin TecnicnologiasSkills{
+    @apply
+    /* -------[ xs/320px ]------- */
+    xs:flex
+    xs:w-40
+    xs:flex-wrap
+    xs:gap-3
+    /* -------[ sm/640px ]------- */
+    sm:flex
+    sm:w-44
+    sm:flex-wrap
+    sm:gap-3
+    /* -------[ md/768px ]------- */
+    md:flex
+    md:w-44
+    md:flex-wrap
+    md:gap-3
+    /* -------[ xl/1280px ]------- */
+    xl:flex
+    xl:w-44
+    xl:gap-3
+    /* -------[ 2xl/1536px ]------- */
+    2xl:flex
+    2xl:w-44
+    2xl:gap-3
+}
+
+
+#Profile{
+    #Card{
+        p{
+            @include pCard
+        }
+        img{
+            @include imgCard
+        }
+        @include Card
+        
+    }
+    #Skills{
+        h3{
+            @include h3Skills
+        }
+        #Tecnologias{
+            p{
+                @include pSkills
+            }
+            @include TecnicnologiasSkills
+            
+        }
+        @include Skills()
+    }
+    @include Profile
+}

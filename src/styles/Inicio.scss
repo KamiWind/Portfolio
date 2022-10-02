@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#Inicio{
+    @apply
+    my-10
+    flex
+    justify-center
+    items-center
+    flex-col
+    gap-6
+}

@@ -3,46 +3,47 @@
 @tailwind utilities;
 
 
-@mixin xsNavbar{
+@mixin Navbar{
     @apply
+    /* -------[ xs/320px ]------- */
     xs:h-16
     xs:flex
     xs:content-center
     xs:items-center
-    xs:bg-slate-900
+    xs:bg-zinc-900
     xs:flex justify-between
     /* -------[ sm/640px ]------- */
     sm:h-16
     sm:flex
     sm:content-center
     sm:items-center
-    sm:bg-slate-900
+    sm:bg-zinc-900
     sm:flex justify-between
     /* -------[ lg/1024px ]------- */
     lg:h-20
     lg:flex
     lg:content-center
     lg:items-center
-    lg:bg-slate-900
+    lg:bg-zinc-900
     lg:flex justify-between
     /* -------[ xl/1280px ]------- */
     xl:h-20
     xl:flex
     xl:content-center
     xl:items-center
-    xl:bg-slate-900
+    xl:bg-zinc-900
     xl:flex justify-between
     /* -------[ 2xl/1536px ]------- */
     2xl:h-20
     2xl:flex
     2xl:content-center
     2xl:items-center
-    2xl:bg-slate-900
+    2xl:bg-zinc-900
     2xl:flex justify-between
     
 }
 
-@mixin xslogo {
+@mixin logo {
     @apply
     xs:ml-1
     xs:flex
@@ -80,7 +81,7 @@
     2xl:text-2xl
 }
 
-@mixin xsP{
+@mixin P{
     @apply
     /* -------[ xs/320px ]------- */
     xs:duration-500
@@ -124,17 +125,17 @@
     xl:gap-x-1
     /* -------[ 2xl/1536px ]------- */
     2xl:duration-500
-    2xl:p-4
+    2xl:p-5
     2xl:flex
     2xl:justify-between
     2xl:items-center
-    2xl:text-2xl
+    2xl:text-xl
     2xl:text-zinc-300
     2xl:hover:text-zinc-600
     2xl:gap-x-1
 }
 
-@mixin xsMenu{
+@mixin Menu{
     @apply
     lg:mr-2
     xs:flex
@@ -160,14 +161,14 @@
 
 #navbar{
     #logo{
-        @include xslogo
+        @include logo
     
     }
     #menu{
         a{
-            @include xsP
+            @include P
         }
-        @include xsMenu
+        @include Menu
     }
-    @include xsNavbar
+    @include Navbar
 }
