@@ -4,6 +4,15 @@
 
 @mixin Profile {
     @apply
+    /* -------[ x/0px ]------- */
+    x:flex
+    x:items-start
+    x:justify-start
+    gap-4
+    x:h-48
+    x:w-72
+    bg-gradient-to-br x:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    x:rounded-3xl
     /* -------[ xs/320px ]------- */
     xs:flex
     xs:items-start
@@ -61,6 +70,15 @@
 }
 @mixin Card{
     @apply
+    /* -------[ s/0px ]------- */
+    x:w-24
+    x:items-center
+    x:text-center
+    x:flex
+    x:flex-col
+    x:my-2
+    x:ml-2
+    x:gap-5
     /* -------[ xs/320px ]------- */
     xs:w-24
     xs:items-center
@@ -119,6 +137,10 @@
 
 @mixin pCard{
     @apply
+    /* -------[ x/0px ]------- */
+    x:text-gray-200
+    x:text-xs
+    font-serif
     /* -------[ xs/320px ]------- */
     xs:text-gray-200
     xs:text-xs
@@ -146,6 +168,14 @@
 }
 @mixin imgCard {
     @apply
+    /* -------[ x/0px ]------- */
+    x:w-10
+    x:h-10
+    x:rounded-full
+    x:ring-offset-transparent
+    x:ring-offset-4
+    x:ring-offset-neutral-900
+    x:ring-1 ring-purple-800
     /* -------[ xs/320px ]------- */
     xs:w-10
     xs:h-10
@@ -190,9 +220,15 @@
 
 @mixin Skills{
     @apply
+    /* -------[ x/0px ]------- */
+    x:items-center
+    x:flex-col
+    x:w-40
+    x:my-2
+    x:mr-2
     /* -------[ xs/320px ]------- */
     xs:items-center
-    sm:flex-col
+    xs:flex-col
     xs:w-40
     xs:my-2
     xs:mr-2
@@ -224,6 +260,14 @@
 }
 @mixin h3Skills{
     @apply
+    /* -------[ x/0px ]------- */
+    x:flex
+    x:justify-center
+    x:font-mono
+    x:text-xs
+    x:text-gray-200
+    x:items-center
+    x:gap-0.5
     /* -------[ xs/320px ]------- */
     xs:flex
     xs:justify-center
@@ -268,6 +312,13 @@
 }
 @mixin pSkills{
     @apply
+    /* -------[ x/0px ]------- */
+    x:text-xs
+    x:gap-1
+    x:flex
+    x:items-center
+    x:text-gray-200
+    x:font-normal
     /* -------[ xs/320px ]------- */
     xs:text-xs
     xs:gap-1
@@ -306,6 +357,11 @@
 }
 @mixin TecnicnologiasSkills{
     @apply
+    /* -------[ x/0px ]------- */
+    x:flex
+    x:w-40
+    x:flex-wrap
+    x:gap-3
     /* -------[ xs/320px ]------- */
     xs:flex
     xs:w-40

@@ -5,6 +5,13 @@
 
 @mixin Navbar{
     @apply
+    /* -------[ x/0px ]------- */
+    x:h-16
+    x:flex
+    x:content-center
+    x:items-center
+    x:bg-zinc-900
+    x:flex justify-between
     /* -------[ xs/320px ]------- */
     xs:h-16
     xs:flex
@@ -45,6 +52,14 @@
 
 @mixin logo {
     @apply
+    /* -------[ x/0px ]------- */
+    x:ml-1
+    x:flex
+    x:items-center
+    animate-pulse
+    x:text-emerald-500
+    x:text-base
+    /* -------[ xs/320px ]------- */
     xs:ml-1
     xs:flex
     xs:items-center
@@ -83,6 +98,16 @@
 
 @mixin P{
     @apply
+    /* -------[ x/0px ]------- */
+    x:duration-500
+    x:p-2
+    x:flex
+    x:justify-between
+    x:items-center
+    x:text-xs
+    x:text-zinc-300
+    x:hover:text-zinc-600
+    x:gap-0.5
     /* -------[ xs/320px ]------- */
     xs:duration-500
     xs:p-2
@@ -137,7 +162,12 @@
 
 @mixin Menu{
     @apply
-    lg:mr-2
+/* -------[ x/0px ]------- */
+    x:mr-2
+    x:flex
+    x:justify-between
+/* -------[ xs/320px ]------- */
+    xs:mr-2
     xs:flex
     xs:justify-between
     /* -------[ sm/640px ]------- */

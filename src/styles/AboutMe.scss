@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin Profile {
+    @apply
+    /* -------[ x/0px ]------- */
+    x:bg-gradient-to-br from-black to-neutral-800
+    x:rounded-3xl
+    x:w-72
+    x:h-auto
+    /* -------[ xs/320px ]------- */
+    xs:bg-gradient-to-br from-black to-neutral-800
+    xs:rounded-3xl
+    xs:w-72
+    xs:h-auto
+    /* -------[ sm/640px ]------- */
+    sm:bg-gradient-to-br from-black to-neutral-800
+    sm:rounded-3xl
+    sm:w-96
+    sm:h-auto
+    /* -------[ md/768px ]------- */
+    md:bg-gradient-to-br from-black to-neutral-800
+    md:rounded-3xl
+    md:w-96
+    md:h-auto
+    /* -------[ lg/1024px ]------- */
+    lg:bg-gradient-to-br from-black to-neutral-800
+    lg:rounded-3xl
+    lg:w-96
+    lg:h-auto
+    /* -------[ xl/1280px ]------- */
+    xl:bg-gradient-to-br from-black to-neutral-800
+    xl:rounded-3xl
+    xl:w-96
+    xl:h-auto
+    /* -------[ 2xl/1536px ]------- */
+    2xl:bg-gradient-to-br from-black to-neutral-800
+    2xl:rounded-3xl
+    2xl:w-96
+    2xl:h-auto
+}
+@mixin h1{
+    @apply
+    /* -------[ x/0px ]------- */
+    x:mt-3
+    x:text-center
+    x:text-sm
+    x:font-bold
+    x:font-sans
+    x:text-white
+    /* -------[ xs/320px ]------- */
+    xs:mt-3
+    xs:text-center
+    xs:text-sm
+    xs:font-bold
+    xs:font-sans
+  xs:text-white
+    /* -------[ sm/640px ]------- */
+    sm:mt-3
+    sm:text-center
+    sm:text-sm
+    sm:font-bold
+    sm:font-sans
+  sm:text-white
+    /* -------[ md/768px ]------- */
+    md:mt-3
+    md:text-center
+    md:text-lg
+    md:font-bold
+    md:font-sans
+  md:text-white
+    /* -------[ lg/1024px ]------- */
+    lg:mt-3
+    lg:text-center
+    lg:text-xl
+    lg:font-bold
+    lg:font-sans
+  lg:text-white
+    /* -------[ xl/1280px ]------- */
+    xl:mt-4
+    xl:text-center
+    xl:text-xl
+    xl:font-bold
+    xl:font-sans
+  xl:text-white
+    /* -------[ 2xl/1536px ]------- */
+    2xl:mt-4
+    2xl:text-center
+    2xl:text-xl
+    2xl:font-bold
+    2xl:font-sans
+  2xl:text-white
+}
+@mixin h4 {
+    @apply
+    /* -------[ x/0px ]------- */
+    x:mt-5
+    x:mb-5
+    x:text-center
+    x:text-sm
+    x:font-bold
+    x:font-sans
+    x:text-white
+    /* -------[ xs/320px ]------- */
+    xs:mt-5
+    xs:mb-5
+    xs:text-center
+    xs:text-sm
+    xs:font-bold
+    xs:font-sans
+    xs:text-white
+    /* -------[ sm/640px ]------- */
+    sm:mt-5
+    sm:mb-5
+    sm:text-center
+    sm:text-sm
+    sm:font-bold
+    sm:font-sans
+    sm:text-white
+    /* -------[ md/768px ]------- */
+    md:mt-7
+    md:mb-7
+    md:text-center
+    md:text-sm
+    md:font-bold
+    md:font-sans
+    md:text-white
+    /* -------[ lg/1024px ]------- */
+    lg:mt-7
+    lg:mb-7
+    lg:text-center
+    lg:text-base
+    lg:font-bold
+    lg:font-sans
+    lg:text-white
+    /* -------[ xl/1280px ]------- */
+    xl:mt-7
+    xl:mb-7
+    xl:text-center
+    xl:text-lg
+    xl:font-bold
+    xl:font-sans
+    xl:text-white
+    /* -------[ 2xl/1536px ]------- */
+    2xl:mt-8
+    2xl:mb-8
+    2xl:text-center
+    2xl:text-lg
+    2xl:font-bold
+    2xl:font-sans
+  2xl:text-white
+}
+
+@mixin p {
+    @apply
+    /* -------[ x/0px ]------- */
+    x:text-white
+    x:text-sm
+    x:font-bold
+    x:font-mono
+    x:mx-3
+    x:mb-3
+    /* -------[ xs/320px ]------- */
+  xs:text-white
+    xs:text-sm
+    xs:font-bold
+    xs:font-mono
+    xs:mx-3
+    xs:mb-3
+    /* -------[ sm/640px ]------- */
+    sm:text-white
+    sm:text-sm
+    sm:font-bold
+    sm:font-mono
+    sm:mx-3
+    sm:mb-3
+    /* -------[ md/768px ]------- */
+    md:text-white
+    md:text-sm
+    md:font-bold
+    md:font-mono
+    md:mx-4
+    md:mb-4
+    /* -------[ lg/1024px ]------- */
+    lg:text-white
+    lg:text-sm
+    lg:font-bold
+    lg:font-mono
+    lg:mx-4
+    lg:mb-4
+    /* -------[ xl/1280px ]------- */
+    xl:text-sm
+    xl:font-bold
+    xl:font-mono
+    xl:mx-4
+    xl:mb-4
+    /* -------[ 2xl/1536px ]------- */
+    2xl:text-sm
+    2xl:font-bold
+    2xl:font-mono
+    2xl:mx-4
+    2xl:mb-4
+}
+
+
+
+#AboutMe{
+    h1{
+        @include h1
+    }
+    h4{
+        @include h4
+    }
+    p{
+        @include p
+    }
+    @include Profile
+}

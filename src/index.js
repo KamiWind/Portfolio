@@ -5,7 +5,7 @@ import Rotas from "./Rotas"
 
 
 ReactDOM.render(
-    <div class="bg-neutral-800 h-screen">
+    <div>
         <Rotas/>
     </div>,
     document.getElementById('root')
