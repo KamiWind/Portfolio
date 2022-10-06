@@ -1,6 +1,6 @@
 import { React, Fragment } from "react";
 import { BiCodeAlt } from "react-icons/bi"
-import { AiFillHome, AiOutlineCode, AiOutlineMail, AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
+import { AiFillHome, AiOutlineCode, AiOutlineMail } from "react-icons/ai"
 
 import "../styles/Navbar.scss";
 

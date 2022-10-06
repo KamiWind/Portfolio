@@ -2,58 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+@mixin Profile{
     @apply
-    bg-neutral-800 h-screen
+    /* ----------[ lg/1024px ]---------- */
+    lg:row-span-1
+    /* ----------[ xl/1280px ]---------- */
+    xl:row-span-1
+    xl:w-auto
+    xl:h-48
+    /* ----------[ 2xl/1536px ]---------- */
 }
+@mixin ContactMe{
+    @apply
+    /* ----------[ lg/1024px ]---------- */
+    lg:row-span-1
+    lg:w-auto
+    lg:h-48
+    /* ----------[ xl/1280px ]---------- */
+    xl:row-span-1
+    xl:w-auto
+    xl:h-48
+    /* ----------[ 2xl/1536px ]---------- */
+    2xl:row-span-1
+    2xl:w-auto
+    2xl:h-48
+}
+@mixin AboutMe{
+    @apply
+    /* ----------[ lg/1024px ]---------- */
+    lg:row-span-3
+    /* ----------[ xl/1280px ]---------- */
+    xl:row-span-2
+    /* ----------[ 2xl/1536px ]---------- */
+    2xl:row-span-2
+}
+
 
 #Inicio{
     @apply
     /* ----------[ x/0px ]---------- */
-    x:my-10
-    x:flex
+    x:grid
+    x:grid-flow-row
+    x:gap-4
     x:justify-center
-    x:items-center
-    x:flex-col
-    x:gap-6
+    x:my-5
     /* ----------[ xs/320px ]---------- */
-    xs:my-10
-    xs:flex
+    xs:grid
+    xs:grid-flow-row
+    xs:gap-4
     xs:justify-center
-    xs:items-center
-    xs:flex-col
-    xs:gap-6
+    xs:my-5
     /* ----------[ sm/640px ]---------- */
-    sm:my-10
-    sm:flex
+    sm:grid
+    sm:grid-flow-row
+    sm:gap-4
     sm:justify-center
-    sm:items-center
-    sm:flex-col
-    sm:gap-6
-    
+    sm:my-5
     /* ----------[ md/768px ]---------- */
-    md:my-10
-    md:flex
+    md:grid
+    md:grid-flow-row
+    md:gap-4
     md:justify-center
-    md:items-center
-    md:flex-col
-    md:gap-6
+    md:my-5
     /* ----------[ lg/1024px ]---------- */
-    lg:my-10
+    lg:grid 
+    lg:grid-rows-2
+    lg:grid-flow-col
     lg:justify-center
-    lg:items-start
-    lg:flex-row
-    lg:gap-16
+    lg:my-5
+    lg:gap-20
     /* ----------[ xl/1280px ]---------- */
-    xl:my-14
+    xl:grid 
+    xl:grid-rows-2
+    xl:grid-flow-col
     xl:justify-center
-    xl:items-start
-    xl:flex-row
-    xl:gap-28
+    xl:my-5
+    xl:gap-20
     /* ----------[ 2xl/1536px ]---------- */
-    2xl:my-14
+    2xl:grid 
+    2xl:grid-rows-2
+    2xl:grid-flow-col
     2xl:justify-center
-    2xl:items-start
-    2xl:flex-row
-    2xl:gap-36
+    2xl:my-5
+    2xl:gap-20
+}
+
+#Profile{
+    @include Profile
+}
+#ContactMe{
+    @include ContactMe
+}
+#AboutMe{
+    @include AboutMe
 }

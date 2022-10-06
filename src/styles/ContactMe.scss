@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+@mixin ContactMe {
+    @apply
+    /* ----------[ x/0px ]---------- */
+    x:rounded-3xl
+    x:w-72
+    x:h-auto
+    x:bg-gradient-to-br from-black to-neutral-800
+    /* ----------[ xs/320px ]---------- */
+    xs:rounded-3xl
+    xs:w-72
+    xs:h-auto
+    /* ----------[ sm/640px ]---------- */
+    sm:rounded-3xl
+    sm:w-96
+    sm:h-auto
+    /* ----------[ md/768px ]---------- */
+    md:rounded-3xl
+    md:w-96
+    md:h-auto
+    /* ----------[ lg/1024px ]---------- */
+    lg:rounded-3xl
+    lg:w-96
+    lg:h-auto
+   
+    /* ----------[ xl/1280px ]---------- */
+    xl:rounded-3xl
+    xl:w-4/12
+    xl:h-auto
+    
+    /* ----------[ 2xl/1536px ]---------- */
+    2xl:rounded-3xl
+    2xl:w-3/12
+    2xl:h-auto
+    
+}
+
+@mixin h1 {
+    /* ----------[ x/0px ]---------- */
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 2px 10px 5px black;
+    @apply
+    x:flex
+    x:justify-center
+    x:items-center
+    x:border-b
+    x:h-16
+    x:text-lg
+    x:text-white
+    /* ----------[ xs/320px ]---------- */
+    xs:flex
+    xs:justify-center
+    xs:items-center
+    xs:border-b
+    xs:h-16
+    xs:text-lg
+    xs:text-white
+    /* ----------[ sm/640px ]---------- */
+    sm:flex
+    sm:justify-center
+    sm:items-center
+    sm:border-b
+    sm:h-16
+    sm:text-xl
+    sm:text-white
+    /* ----------[ md/768px ]---------- */
+    md:flex
+    md:justify-center
+    md:items-center
+    md:border-b
+    md:h-16
+    md:text-2xl
+    md:text-white
+    /* ----------[ lg/1024px ]---------- */
+    lg:flex
+    lg:justify-center
+    lg:items-center
+    lg:border-b
+    lg:h-16
+    lg:text-2xl
+    lg:text-white
+    /* ----------[ xl/1280px ]---------- */
+    xl:flex
+    xl:justify-center
+    xl:items-center
+    xl:border-b
+    xl:h-16
+    xl:text-3xl
+    xl:text-white
+    /* ----------[ 2xl/1536px ]---------- */
+    2xl:flex
+    2xl:justify-center
+    2xl:items-center
+    2xl:border-b
+    2xl:h-16
+    2xl:text-3xl
+    2xl:text-white
+}
+
+@mixin a {
+    @apply
+    /* ----------[ x/0px ]---------- */
+  x:text-white
+    x:text-base
+    x:flex
+    x:items-center
+    x:gap-1
+    x:mt-3
+    /* ----------[ xs/320px ]---------- */
+    xs:text-white
+    xs:text-base
+    xs:flex
+    xs:items-center
+    xs:gap-1
+    xs:mt-3
+    /* ----------[ sm/640px ]---------- */
+    sm:text-white
+    sm:text-xl
+    sm:flex
+    sm:items-center
+    sm:gap-1
+    sm:mt-3
+    /* ----------[ md/768px ]---------- */
+    md:text-white
+    md:text-xl
+    md:flex
+    md:items-center
+    md:gap-1
+    md:mt-3
+    /* ----------[ lg/1024px ]---------- */
+    lg:text-white
+    lg:text-xl
+    lg:flex
+    lg:items-center
+    lg:gap-1
+    lg:mt-3
+    /* ----------[ xl/1280px ]---------- */
+    xl:text-white
+    xl:text-xl
+    xl:flex
+    xl:items-center
+    xl:gap-1
+    xl:mt-3
+    /* ----------[ 2xl/1536px ]---------- */
+    2xl:text-white
+    2xl:text-xl
+    2xl:flex
+    2xl:items-center
+    2xl:gap-1
+    2xl:mt-3
+}
+
+@mixin Contatos {
+    /* ----------[ x/0px ]---------- */
+    @apply
+    x:flex
+    x:justify-around
+    x:items-center
+    x:h-28
+    /* ----------[ xs/320px ]---------- */
+    xs:flex
+    xs:justify-around
+    xs:items-center
+    xs:h-28
+    /* ----------[ sm/640px ]---------- */
+    sm:flex
+    sm:justify-around
+    sm:items-center
+    sm:h-28
+    /* ----------[ md/768px ]---------- */
+    md:flex
+    md:justify-around
+    md:items-center
+    md:h-28
+    /* ----------[ lg/1024px ]---------- */
+    lg:flex
+    lg:justify-around
+    lg:items-center
+    lg:h-28
+    /* ----------[ xl/1280px ]---------- */
+    xl:flex
+    xl:justify-around
+    xl:items-center
+    xl:h-28
+    /* ----------[ 2xl/1536px ]---------- */
+    2xl:flex
+    2xl:justify-around
+    2xl:items-center
+    2xl:h-28
+}
+
+
+#ContactMe{
+    h1{
+        @include h1
+    }
+    #Contatos{
+        a{
+            @include a
+        }
+        @include Contatos
+    }
+    @include ContactMe
+}

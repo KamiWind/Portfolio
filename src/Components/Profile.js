@@ -13,7 +13,8 @@ export default function Profile(){
     return (
       <div id="Profile">
         <div id="Card">
-          <img src={Perfil} />
+          <img src={Perfil}
+          alt="Perfil.img"/>
           <p>
             Glaucio Castilho
             <br />

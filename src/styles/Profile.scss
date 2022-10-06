@@ -9,18 +9,16 @@
     x:items-start
     x:justify-start
     gap-4
-    x:h-48
     x:w-72
+    x:h-48
     bg-gradient-to-br x:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
     x:rounded-3xl
     /* -------[ xs/320px ]------- */
     xs:flex
     xs:items-start
     xs:justify-start
-    gap-4
     xs:h-48
     xs:w-72
-    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
     xs:rounded-3xl
     /* -------[ sm/640px ]------- */
     sm:flex
@@ -29,7 +27,6 @@
     sm:gap-16
     sm:h-48
     sm:w-96
-    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
     sm:rounded-3xl
     /* -------[ md/768px ]------- */
     md:flex
@@ -38,7 +35,6 @@
     md:gap-16
     md:h-48
     md:w-96
-    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
     md:rounded-3xl
     /* -------[ lg/1024px ]------- */
     lg:flex
@@ -47,7 +43,6 @@
     lg:gap-16
     lg:h-48
     lg:w-96
-    bg-gradient-to-br xs:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
     lg:rounded-3xl
     /* -------[ xl/1280px ]------- */
     xl:flex
@@ -56,7 +51,6 @@
     xl:gap-16
     xl:h-56
     xl:w-4/12
-    bg-gradient-to-br from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
     xl:rounded-3xl
     /* -------[ 2xl/1536px ]------- */
     2xl:flex
@@ -64,8 +58,7 @@
     2xl:items-start
     2xl:gap-12
     2xl:h-56
-    2xl:w-4/12
-    bg-gradient-to-br from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    2xl:w-3/12
     2xl:rounded-3xl
 }
 @mixin Card{
@@ -143,28 +136,19 @@
     font-serif
     /* -------[ xs/320px ]------- */
     xs:text-gray-200
-    xs:text-xs
-    font-serif
     /* -------[ sm/640px ]------- */
   sm:text-gray-200
     sm:text-sm
-    font-serif
     /* -------[ md/768px ]------- */
   md:text-gray-200
-    md:text-sm
-    font-serif
     /* -------[ lg/1024px ]------- */
     lg:text-gray-200
-    lg:text-sm
-    font-serif
     /* -------[ xl/1280px ]------- */
     xl:text-gray-200
     xl:text-lg
-    xl:font-serif
     /* -------[ 2xl/1536px ]------- */
     2xl:text-gray-200
     2xl:text-xl
-    2xl:font-serif
 }
 @mixin imgCard {
     @apply
@@ -172,50 +156,50 @@
     x:w-10
     x:h-10
     x:rounded-full
-    x:ring-offset-transparent
     x:ring-offset-4
-    x:ring-offset-neutral-900
-    x:ring-1 ring-purple-800
+  x:ring-offset-neutral-900
+    x:ring-1 
+  x:ring-purple-800
     /* -------[ xs/320px ]------- */
     xs:w-10
     xs:h-10
     xs:rounded-full
-    xs:ring-offset-transparent
     xs:ring-offset-4
   xs:ring-offset-neutral-900
-    xs:ring-1 ring-purple-800
+    xs:ring-1 
+  xs:ring-purple-800
     /* -------[ sm/640px ]------- */
     sm:w-14
     sm:h-14
     sm:rounded-full
-    sm:ring-offset-transparent
     sm:ring-offset-4
   sm:ring-offset-neutral-900
-    sm:ring-1 ring-purple-800
+    sm:ring-1 
+    sm:ring-purple-800
     /* -------[ md/768px ]------- */
     md:w-14
     md:h-14
     md:rounded-full
-    md:ring-offset-transparent
     md:ring-offset-4
   md:ring-offset-neutral-900
-    md:ring-1 ring-purple-800
+    md:ring-1 
+    md:ring-purple-800
      /* -------[ xl/1280px ]------- */
      xl:w-16
      xl:h-16
      xl:rounded-full
-     xl:ring-offset-transparent
      xl:ring-offset-4
    xl:ring-offset-neutral-900
-     xl:ring-1 ring-purple-800
+     xl:ring-1 
+     xl:ring-purple-800
      /* -------[ 2xl/1536px ]------- */
      2xl:w-16
      2xl:h-16
      2xl:rounded-full
-     2xl:ring-offset-transparent
      2xl:ring-offset-4
    2xl:ring-offset-neutral-900
-     2xl:ring-1 ring-purple-800
+     2xl:ring-1 
+     2xl:ring-purple-800
 }
 
 @mixin Skills{
