@@ -1,13 +1,12 @@
 import { React } from "react";
 
-
 import "../styles/AboutMe.scss"
 
 export default function AboutMe() {
   return (
     <div id="AboutMe">
       <div id="destaque">
-        <h1>Olá, meu nome é Glaucio Castilho</h1>
+        <h1>Sobre mim</h1>
         <h4>Desenvolvedor Front End</h4>
       </div>
         <p>
