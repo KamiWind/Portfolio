@@ -2,36 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-#items1{
-    @apply
-    flex
-    flex-col
-    gap-4
-}
-.items2{
-}
-
-.Inicio{
+#items{
     @apply
     /* ----------[ x/0px ]---------- */
     x:flex
-    x:flex-col
-    x:gap-3
+    x:justify-center
     x:my-4
-    x:items-center
+    /* ----------[ xs/320px ]---------- */
+    /* ----------[ sm/640px ]---------- */
+    /* ----------[ md/768px ]---------- */
+    md:my-6
+    /* ----------[ lg/1024px ]---------- */
+    lg:my-10
+    /* ----------[ xl/1280px ]---------- */
+    xl:my-14
+    /* ----------[ 2xl/1536px ]---------- */
+}
+#item1{
+    @apply
+    /* ----------[ x/0px ]---------- */
     /* ----------[ xs/320px ]---------- */
     /* ----------[ sm/640px ]---------- */
     /* ----------[ md/768px ]---------- */
     /* ----------[ lg/1024px ]---------- */
-    lg:flex-row
-    lg:justify-center
-    lg:gap-14
-    lg:my-10
     /* ----------[ xl/1280px ]---------- */
-    xl:flex
-    xl:justify-center
-    xl:gap-16
+    xl:w-96
     /* ----------[ 2xl/1536px ]---------- */
-    2xl:justify-center
-    2xl:gap-20
+    2xl:w-3/12
 }

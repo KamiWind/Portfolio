@@ -13,11 +13,15 @@ import "../styles/Inicio.scss"
 export default function Inicio() {
     return (
       <Fragment>
-        <Navbar/>
-        <div id="Inicio">
-          <Profile id="Profile"/>
-          <ContactMe id="ContactMe"/>
-          <AboutMe id="AboutMe"/>
+        <Navbar />
+        <div class="Inicio">
+          <div id="items1">
+            <Profile/>
+            <ContactMe/>
+          </div>
+          <div id="items2">
+            <AboutMe/>
+          </div>
         </div>
       </Fragment>
     );

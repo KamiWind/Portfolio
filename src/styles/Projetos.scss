@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@mixin Breve {
+    @apply
+    /* -------[ x/0px ]------- */
+    flex
+    justify-center
+    items-center
+    w-52
+    h-24
+    bg-gradient-to-br x:from-[#000000] via-[rgb(255,255,255)] to-[#23045e]
+    rounded-lg
+    text-red-700
+    font-bold
+    /* -------[ xs/320px ]------- */
+    /* -------[ sm/640px ]------- */
+    /* -------[ md/768px ]------- */
+    /* -------[ lg/1024px ]------- */
+    lg:w-72
+    lg:h-32
+    /* -------[ xl/1280px ]------- */
+    xl:w-96
+    /* -------[ 2xl/1536px ]------- */
+}
+
+
+#Projetos{
+    #Projeto1{
+        @include Breve
+    }
+    #Projeto2{
+        @include Breve
+    }
+    #Projeto3{
+        @include Breve
+    }
+    #Projeto4{
+        @include Breve
+    }
+    #Projeto5{
+        @include Breve
+    }
+    #Projeto6{
+        @include Breve
+    }
+    @apply
+    /* -------[ x/0px ]------- */
+    x:flex
+    x:flex-col
+    x:items-center
+    x:gap-3
+    x:my-5
+    /* -------[ xs/320px ]------- */
+    /* -------[ sm/640px ]------- */
+    sm:flex-row
+    sm:flex-wrap
+    sm:justify-center
+    sm:gap-6
+    /* -------[ md/768px ]------- */
+    /* -------[ lg/1024px ]------- */
+    lg:gap-10
+    lg:my-10
+    /* -------[ xl/1280px ]------- */
+    /* -------[ 2xl/1536px ]------- */
+}

@@ -14,7 +14,7 @@ export default function ContactMe() {
           <h1>Entre em Contato comigo</h1>
           <div id="Contatos">
             <span>
-              <a href="https://api.whatsapp.com/send?phone=5521995138527&text=Ol%C3%A1!%20eu%20venho%20pelo%20seu%20portfolio%20e%20tenho%20interesse%20em%20contrata-lo!" type="_blank"><FaWhatsapp/>Whatsapp</a>
+              <a href="https://api.whatsapp.com/send?phone=5521995138527&text=Ol%C3%A1!%20eu%20venho%20pelo%20seu%20portfolio%20e%20tenho%20interesse%20em%20contrata-lo!" target="_blank"><FaWhatsapp/>Whatsapp</a>
               <a href="mailto:kamiwind@outlook.com?subject=%22Digite%20o%20Assunto%20aqui%22&body=%22Digite%20sua%20Menssagem%20Aqui%22" title="kamiwind@outlook.com"><HiOutlineMail/>Email</a>
             </span>
             <span>
