@@ -11,7 +11,7 @@ export default function AboutMe() {
       </div>
         <p>
           Meu nome é Glaucio, Nasci em 17 de Fevereiro de 1996
-          em Belford Roxo-RJ.
+          em Belford Roxo (RJ)
         </p>
         <p>
           Estou Estudando Desenvolvimento (FrontEnd) Web desde

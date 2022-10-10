@@ -12,9 +12,9 @@ import "../styles/Inicio.scss"
 
 export default function Inicio() {
     return (
-      <Fragment>
+      <div class="flex flex-col h-screen justify-between">
         <Navbar />
-        <div class="Inicio">
+        <section class="Inicio">
           <div id="items1">
             <Profile/>
             <ContactMe/>
@@ -22,7 +22,13 @@ export default function Inicio() {
           <div id="items2">
             <AboutMe/>
           </div>
-        </div>
-      </Fragment>
+        </section>
+        <footer class="flex justify-center items-end text-center x:invisible sm:visible">
+          <p>Desenvolvido por mim (Glaucio Castilho)
+            <br/>
+            Tecnologias ultilizadas: React / JavaScript / Css / Sass / Tailwind
+          </p>
+        </footer>
+      </div>
     );
 }

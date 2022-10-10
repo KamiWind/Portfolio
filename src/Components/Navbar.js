@@ -7,14 +7,14 @@ import "../styles/Navbar.scss";
 export default function Navbar() {
   return (
     <Fragment>
-      <div id="navbar">
+      <header id="navbar">
         <h3 id="logo"><BiCodeAlt/> Portfolio</h3>
         <div id="menu">
           <a href="/"><AiFillHome/>Inicio</a>
           <a href="Projetos"><AiOutlineCode/>Projetos</a>
           <a href="Contato"><AiOutlineMail/>Contato</a>
         </div>
-      </div>
+      </header>
     </Fragment>
   );
 }
